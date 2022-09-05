@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+/* Header Encabezado */
+
+nav {
+    background-color: #140850;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 0 6px #000;    
+}
+
+nav li {
+    display: inline-block;
+    padding-left: 23px;
+}
+
+nav li a {
+    color: #F0EEF7;
+    text-decoration: none;
+    padding: 15px;
+    transition: .3s ease;
+}
+
+nav li a:hover {
+    color: #DADADB;
+    text-decoration: underline;
+    text-decoration-color: #F0EEF7;
+    -moz-text-decoration-color: #F0EEF7;
+    text-decoration-thickness: 3px;
+}
+
+nav p {
+    color: #F0EEF7;
+    float: left;
+    font-size: 25px;
+    margin-top: -5px;
+}
+
+.buscar {
+    display: flex;
+    background-color: #F0EEF7;
+    border-radius: 15px;
+    float: right;
+    position: relative;
+    top: -27px;
+}
+
+.caja-buscar {
+    display: flex;
+    margin: auto 0;
+    height: 24px;
+    padding: 5px;
+    width: 180px;
+}
+
+.caja-buscar input {
+    border: none;
+    outline: none;
+    background-color: #F0EEF7;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 14px;
+    width: 280px;
+}
+
+/* Secciones */
+
+.fondo {
+    height: 100vh;
+    box-sizing: border-box;
+    background: linear-gradient(109deg, #ffff 60%, #484CD5 40%);
+    padding: 35px;
+    
+}
