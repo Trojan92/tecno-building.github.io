@@ -1,4 +1,4 @@
-*, *::after, *::before {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,29 +27,40 @@ nav {
 }
 
 nav ul {
+    display: flex;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     list-style: none;
+}
+
+nav li {
+    padding: 0 15px;
+    display: inline-block;
+}
+
+nav li.logo {
+    color: whitesmoke;
+    font-size: 30px;
 }
 
 nav div.menu a {
     position: relative;
     color: whitesmoke;
     text-decoration: none;
-    padding: 7px 0;
-    font-size: 18px;
+    padding: 8px 0;
+    font-size: 16px;
 }
 
  nav ul div.menu a::after {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 50%;
     width: 0;
     height: 2px;
-    background: whitesmoke;
+    background: #ffc957;
     transition: 0.3s ease-out;
 }
 
@@ -60,23 +71,69 @@ nav ul div.menu a:hover::after {
 
 nav ul div.menu a:hover {
     color: #ffc957;
-
 }
 
+/* Caja de Busqueda */
+
+nav ul li.buscar {
+    display: flex;
+    height: 30px;
+    width: 240px;
+    background: white;
+    border-radius: 8px;
+}
+
+nav ul li.buscar input {
+    height: 100%;
+    width: 250px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    padding: 0 10px;
+    font-size: 17px;
+    color: #000;
+}
+
+nav .bars {
+    position: relative;
+    margin: auto;
+    display: none;
+}
+
+nav .bars span {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    display: none;
+}
 
 /* Resposive Screen */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 200px) {
     nav {
-        padding: 10px 40px 10px 70px;
-}
-    nav ul li.logo {
-        display: none;
-}
-    nav ul div.menu {
-        flex: 4;
+        display: block;
+        padding: 0;
+    }
+    nav .logo {
+        display: inline-block;
+        padding: 15px 30px;
+    }
+    nav .buscar {
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    nav .buscar input {
+        width: 90%;
+        flex-direction: column;
     }
 }
+
 
 /* Secciones */
 
