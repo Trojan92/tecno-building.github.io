@@ -24,7 +24,7 @@ body {
     font-size: 45px;
     text-align: center;
     margin-bottom: 60px;
-    margin-top: 30px;    
+    margin-top: 30px;   
 }
 
 /* Nav - Menu */
@@ -110,18 +110,6 @@ nav ul li.buscar input {
     color: #000;
 }
 
-nav .bars {
-    position: relative;
-    margin: auto;
-    display: none;
-}
-
-nav .bars span {
-    position: absolute;
-    color: white;
-    font-size: 30px;
-}
-
 /* Header */
 
 header {
@@ -159,7 +147,6 @@ header .textos-header {
     font-weight: 250;
     color: #0e1d60;
 }
-
 
 /* Nuestros Servicios */
 
@@ -260,7 +247,7 @@ header .textos-header {
 .cards {
     display: flex;
     padding-bottom: 100px;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .cards .card {
@@ -268,18 +255,18 @@ header .textos-header {
     display: flex;
     width: 310px;
     height: 200px;
-    align-items: flex-start;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-evenly;
     box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
     border-radius: 10px;
-    padding-top: 15px;
 }
 
 .cards .card img {
-    height: 170px;
-    width: 105px;
+    height: 110px;
+    width: 110px;
     object-fit: cover;
-    border-radius: 40px;
+    border-radius: 50%;
+    display: block;
 }
 
 .cards .card > .cont-text-card {
@@ -413,10 +400,59 @@ footer .social-link:nth-of-type(3) {
     cursor: pointer;
 }
 
-/* Footer Responsive */
+/* Pagina Responsive */
 
-@media (max-width: 950px) {
-    
+@media screen and (max-width: 900px) {
+
+    header {
+        background-position: center;
+    }
+
+    .textos-header h1 {
+        font-size: 40px;
+        font-weight: 800;
+    }
+
+    nav ul li.buscar {
+        width: 130px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul li.buscar input {
+        width: 130px;
+        
+    }
+
+    /* Nuestros Servicios */
+
+    .nuestros-serv {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Empresas Aliadas */
+
+    .imagen-port {
+        width: 45%;
+    }
+
+    /* Conócenos */
+
+    .cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card {
+        width: 90%;
+        margin-bottom: 25px;
+    }
+
+    /* Footer */
+
     .footer-container {
         padding: 2rem;
         flex-direction: column;
@@ -464,4 +500,92 @@ footer .social-link:nth-of-type(3) {
         align-items: flex-start;
         border-bottom: none;
     }
+}
+
+@media screen and (max-width: 500px) {
+
+    /* Nav */
+
+    nav ul {
+        text-align: center;
+        padding: 10px 25px 5px 0;
+        flex-direction: column;
+    }
+
+    nav ul li.buscar {
+        height: 20px;
+    }
+
+    nav ul li.buscar input {
+        height: 20px;
+        font-size: 13px;
+    }
+
+    nav div.menu {
+        margin-bottom: 15px;
+    }
+
+    nav div.menu li {
+        padding-bottom: 5px;
+    }
+
+    /* Header */
+
+    .header {
+        align-items: flex-start;
+    }
+
+    .textos-header h1 {
+        font-size: 25px;        
+    }
+
+    .textos-header h2 {
+        font-size: 16px;
+        margin-bottom: 160px;
+    }
+
+    /* Nuestros Servicios */
+
+    .titulo {
+        font-size: 28px;
+    }
+
+    .nuestros-serv p {
+        font-size: 15px;
+    }
+
+    .box-container .box {
+        height: 150px;
+    }
+
+    .box-container .box i {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        font-size: 25px;
+        margin: 10px 0;
+    }
+    
+    .box-container .box h3 {
+        font-size: 16px;
+    }
+    
+    .box-container .box p {
+        padding: 0 15px;
+        font-size: 15px;
+    }
+
+    /* Empresas Aliadas */
+
+    .aliados p {
+        font-size: 14px;
+    }
+
+    .imagen-port {
+        width: 85%;
+    }
+
+    /* Conocenos */
+
+    
 }
