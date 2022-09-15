@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    padding: 70px 0;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color: #0e1d60;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 30px;   
+}
+
+/* Nav - Menu */
+
+nav {
+    background-color: #0e1d60;
+    text-align: center;
+    padding: 10px 40px 10px 70px;
+    border: 1.4px solid #382ee4;
+    border-left: none;
+    border-right: none;
+    box-shadow: 0 0 8px #000;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+nav li {
+    padding: 0 15px;
+    display: inline-block;
+}
+
+nav li.logo {
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+nav div.menu a {
+    position: relative;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 8px 0;
+    font-size: 16px;
+}
+
+ nav ul div.menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: #3cb371;
+    transition: 0.3s ease-out;
+}
+
+nav ul div.menu a:hover::after {
+    left: 0;
+    width: 100%;
+}
+
+nav ul div.menu a:hover {
+    color: #3cb371;
+}
+
+/* Caja de Busqueda */
+
+nav ul li.buscar {
+    display: flex;
+    height: 30px;
+    width: 240px;
+    background: white;
+    border-radius: 8px;
+}
+
+nav ul li.buscar input {
+    height: 100%;
+    width: 250px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    padding: 0 10px;
+    font-size: 17px;
+    color: #000;
+}
+
+/* Empresas Aliadas */
+
+.aliados {
+    background: white;
+}
+
+.galeria-port {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port {
+    width: 240px;
+    height: 200px;
+    margin-bottom: 10px;
+    position: relative;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    transition: 0.5s;
+}
+
+.imagen-port:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.imagen-port > img {
+    width: 240px;
+    height: 200px;
+    object-fit: fill;
+    display: block;
+}
+.aliados p {
+    text-align: center;
+    justify-content: center;
+    padding: 30px 0;
+    color: #0e1d60;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.galeria h4 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 12px;
+    font-size: 16px;
+    color: #0e1d60;
+    font-weight: 1000;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: fit-content;
+    color: white;
+    background: linear-gradient(to right, #0072b7, #382ee4);
+    border-top-left-radius: 80px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+
+}
+
+.copyright-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #002b87;
+}
+
+.copyright {
+    font-size: 13px;
+    opacity: 0.7;
+    font-weight: 400;
+    padding: 8px 0;
+}
+
+.footer-menus {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 45%;
+}
+
+.footer-container {
+    height: fit-content;
+    width: 100%;
+    padding: 3rem 6rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-column {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.footer-container p {
+    margin: 0.2rem 0;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.footer-container h4 {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+    letter-spacing: 3px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+}
+
+.one, .two, .three {
+    height: 20px;
+    width: 20px;
+    background-size: 70%;
+    background-position: center;
+    margin-right: 15px;
+    background-repeat: no-repeat;
+}
+
+.one:hover, .two:hover, .three:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.footer-columns img {
+    width: 250px;
+    height: 110px;
+    margin-bottom: 40px;
+}
+
+.footer-column h4 {
+    width: fit-content;
+    margin-bottom: 20px;
+    position: relative;    
+    border-bottom: 3px solid #002b87;
+    padding-bottom: 10px;
+}
+
+.footer-column h4:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* Pagina Responsive */
+
+@media screen and (max-width: 900px) {
+
+    nav ul li.buscar {
+        width: 130px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul li.buscar input {
+        width: 130px;
+        
+    }
+
+    /* Empresas Aliadas */
+
+    .imagen-port {
+        width: 45%;
+    }
+
+    /* Footer */
+
+    .footer-container {
+        padding: 2rem;
+        flex-direction: column;
+    }
+
+    .footer-columns {
+        width: 100%;
+        padding: 2rem 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-column:nth-of-type(1) {
+        align-items: flex-start;
+    }
+    
+    .footer-column:nth-of-type(3) {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .footer-menus{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer-menus .footer-column:nth-of-type(1) {
+        width: 30%;
+        align-items: flex-start;
+        border-bottom: none;
+    }
+
+    .footer-menus .footer-column:nth-of-type(2) {
+        width: 30%;
+        align-items: flex-start;
+        border-bottom: none;
+    }
+
+    .footer-menus .footer-column:nth-of-type(3) {
+        width: 30%;
+        align-items: flex-start;
+        border-bottom: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    /* Nav */
+
+    nav ul {
+        text-align: center;
+        padding: 10px 25px 5px 0;
+        flex-direction: column;
+    }
+
+    nav ul li.buscar {
+        height: 20px;
+    }
+
+    nav ul li.buscar input {
+        height: 20px;
+        font-size: 13px;
+    }
+
+    nav div.menu {
+        margin-bottom: 15px;
+    }
+
+    nav div.menu li {
+        padding-bottom: 5px;
+    }
+
+    /* Empresas Aliadas */
+
+    .aliados p {
+        font-size: 14px;
+    }
+
+    .imagen-port {
+        width: 85%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Footer */
+
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-columns {
+        border: none;
+    }
+
+    .footer-columns p {
+        margin: 0;
+    }
+
+    .footer-columns img {
+        width: 170px;
+        height: 90px;
+    }
+
+    .footer-column {
+        padding-top: 15px;
+    }
+
+    .footer-menus {
+        flex-direction: column;
+        width: 90%;
+        height: 90%;
+        border: none;
+    }
+
+    .footer-container p {
+        font-size: 14px;
+        width: 160px;
+    }
+
+    .copyright {
+        font-size: 10px;   
+    }
+
+    .social {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+}
