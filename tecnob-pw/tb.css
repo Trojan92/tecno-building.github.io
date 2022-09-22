@@ -20,7 +20,7 @@ body {
 }
 
 .titulo {
-    color: #0e1d60;
+    color: #0071c5;
     font-size: 45px;
     text-align: center;
     margin-bottom: 60px;
@@ -30,10 +30,10 @@ body {
 /* Nav - Menu */
 
 nav {
-    background-color: #0e1d60;
+    background-color: #000;
     text-align: center;
     padding: 10px 40px 10px 70px;
-    border: 1.4px solid #382ee4;
+    border: 1.4px solid #434343;
     border-left: none;
     border-right: none;
     box-shadow: 0 0 8px #000;
@@ -51,12 +51,20 @@ nav ul {
     list-style: none;
 }
 
+nav ul img {
+    width: 110px;
+    height: 45px;
+    margin-left: -20px;
+}
+
 nav li {
     padding: 0 15px;
     display: inline-block;
 }
 
 nav li.logo {
+    margin-left: -120px;
+    margin-bottom: -5px;
     color: whitesmoke;
     font-size: 30px;
 }
@@ -76,7 +84,7 @@ nav div.menu a {
     left: 50%;
     width: 0;
     height: 3px;
-    background: #3cb371;
+    background: #0072b7;
     transition: 0.3s ease-out;
 }
 
@@ -86,7 +94,7 @@ nav ul div.menu a:hover::after {
 }
 
 nav ul div.menu a:hover {
-    color: #3cb371;
+    color: #0072b7;
 }
 
 /* Caja de Busqueda */
@@ -115,7 +123,7 @@ nav ul li.buscar input {
 header {
     width: 100%;
     height: 650px;
-    background: linear-gradient(to right, hsla(169, 75%, 69%, 0.616), hsla(229, 52%, 79%, 0.616)), url(imagenes-tb/oficina.jpg);
+    background: linear-gradient(to right, hsla(50, 12%, 63%, 0.658), hsla(0, 0%, 95%, 0.651), hsla(0, 0%, 86%, 0.651), hsla(0, 0%, 92%, 0.651)), url(imagenes-tb/oficina.jpg);
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -154,7 +162,7 @@ header .textos-header {
     text-align: center;
     justify-content: center;
     padding: 30px 0;
-    color: #0e1d60;
+    color: #000;
     font-size: 20px;
     font-weight: 600;
 }
@@ -183,14 +191,14 @@ header .textos-header {
     text-align: center;
     border-radius: 50%;
     color: whitesmoke;
-    background: #3cb371;
+    background: #000;
     font-size: 28px;
     margin: 15px 0;
 }
 
 .box-container .box h3 {
     font-size: 22px;
-    color: #43ff9e;
+    color: #000;
 }
 
 .box-container .box p {
@@ -237,12 +245,21 @@ header .textos-header {
     text-align: center;
     justify-content: center;
     padding: 30px 0;
-    color: #0e1d60;
+    color: #000;
     font-size: 20px;
     font-weight: 600;
 }
 
 /* Conócenos */
+
+.conocenos h3 {
+    text-align: center;
+    justify-content: center;
+    padding: 30px 0;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}
 
 .cards {
     display: flex;
@@ -251,7 +268,7 @@ header .textos-header {
 }
 
 .cards .card {
-    background: #1f2385;
+    background: #0071c5;
     display: flex;
     width: 310px;
     height: 200px;
@@ -287,13 +304,12 @@ footer {
     left: 0;
     height: fit-content;
     color: white;
-    background: linear-gradient(to right, #0072b7, #382ee4);
+    background: linear-gradient(to right, #000, #434343);
     border-top-left-radius: 80px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     font-size: 16px;
-
 }
 
 .copyright-container {
@@ -301,7 +317,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 2px solid #002b87;
+    border-top: 2px solid #0071c5;
 }
 
 .copyright {
@@ -382,7 +398,7 @@ footer {
     width: fit-content;
     margin-bottom: 20px;
     position: relative;    
-    border-bottom: 3px solid #002b87;
+    border-bottom: 3px solid #0071c5;
     padding-bottom: 10px;
 }
 
