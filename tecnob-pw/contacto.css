@@ -62,13 +62,6 @@ nav li {
     display: inline-block;
 }
 
-nav li.logo {
-    margin-left: -120px;
-    margin-bottom: -5px;
-    color: whitesmoke;
-    font-size: 30px;
-}
-
 nav div.menu a {
     position: relative;
     color: whitesmoke;
